@@ -14,6 +14,9 @@
 		6F2A63601C89CFAB0017ADB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2A635E1C89CFAB0017ADB3 /* LaunchScreen.storyboard */; };
 		6F2A636B1C89CFAB0017ADB3 /* RadialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2A636A1C89CFAB0017ADB3 /* RadialTests.swift */; };
 		6F2A63761C89CFAB0017ADB3 /* RadialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2A63751C89CFAB0017ADB3 /* RadialUITests.swift */; };
+		6F2A63841C89CFC50017ADB3 /* IBAnimatable in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2A63831C89CFC50017ADB3 /* IBAnimatable */; };
+		6F2A63871C8DBAF30017ADB3 /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2A63861C8DBAF30017ADB3 /* DismissSegue.swift */; };
+		6F2A638A1C8DBB300017ADB3 /* UIViewController+UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2A63891C8DBB300017ADB3 /* UIViewController+UnwindSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		6F2A63711C89CFAB0017ADB3 /* RadialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2A63751C89CFAB0017ADB3 /* RadialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialUITests.swift; sourceTree = "<group>"; };
 		6F2A63771C89CFAB0017ADB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F2A63831C89CFC50017ADB3 /* IBAnimatable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = IBAnimatable; path = ../PopTurd/IBAnimatable; sourceTree = "<group>"; };
+		6F2A63861C8DBAF30017ADB3 /* DismissSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissSegue.swift; sourceTree = "<group>"; };
+		6F2A63891C8DBB300017ADB3 /* UIViewController+UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+UnwindSegue.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F2A63841C89CFC50017ADB3 /* IBAnimatable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +84,7 @@
 		6F2A63491C89CFAB0017ADB3 = {
 			isa = PBXGroup;
 			children = (
+				6F2A63831C89CFC50017ADB3 /* IBAnimatable */,
 				6F2A63541C89CFAB0017ADB3 /* Radial */,
 				6F2A63691C89CFAB0017ADB3 /* RadialTests */,
 				6F2A63741C89CFAB0017ADB3 /* RadialUITests */,
@@ -97,6 +105,8 @@
 		6F2A63541C89CFAB0017ADB3 /* Radial */ = {
 			isa = PBXGroup;
 			children = (
+				6F2A63881C8DBB110017ADB3 /* extension */,
+				6F2A63851C8DBADC0017ADB3 /* segue */,
 				6F2A63551C89CFAB0017ADB3 /* AppDelegate.swift */,
 				6F2A63571C89CFAB0017ADB3 /* ViewController.swift */,
 				6F2A63591C89CFAB0017ADB3 /* Main.storyboard */,
@@ -123,6 +133,22 @@
 				6F2A63771C89CFAB0017ADB3 /* Info.plist */,
 			);
 			path = RadialUITests;
+			sourceTree = "<group>";
+		};
+		6F2A63851C8DBADC0017ADB3 /* segue */ = {
+			isa = PBXGroup;
+			children = (
+				6F2A63861C8DBAF30017ADB3 /* DismissSegue.swift */,
+			);
+			name = segue;
+			sourceTree = "<group>";
+		};
+		6F2A63881C8DBB110017ADB3 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				6F2A63891C8DBB300017ADB3 /* UIViewController+UnwindSegue.swift */,
+			);
+			name = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +283,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F2A63581C89CFAB0017ADB3 /* ViewController.swift in Sources */,
+				6F2A63871C8DBAF30017ADB3 /* DismissSegue.swift in Sources */,
 				6F2A63561C89CFAB0017ADB3 /* AppDelegate.swift in Sources */,
+				6F2A638A1C8DBB300017ADB3 /* UIViewController+UnwindSegue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
